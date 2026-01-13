@@ -2,8 +2,13 @@
 
 source 'https://rubygems.org'
 
-ruby '3.0.1'
+ruby '3.3.9'
 
-gem 'discordrb', github: 'shardlab/discordrb', branch: 'threads'
+gem 'discordrb'
 gem 'dotenv'
-gem 'rubocop', require: false
+gem 'openssl'
+
+group :test do
+  gem 'rubocop', require: false
+end
+
